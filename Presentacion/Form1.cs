@@ -1,6 +1,6 @@
-﻿using Negocio;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using Logica;
 
 namespace Presentacion
 {
@@ -75,8 +75,7 @@ namespace Presentacion
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             app.EliminarPersona(dgv.CurrentRow.Index);
-            dgv.Rows.Clear();
-            MostrarData();
+            dgv.Rows.Remove(dgv.CurrentRow);
         }
     }
 }

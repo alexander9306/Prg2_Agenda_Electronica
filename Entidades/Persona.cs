@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Negocio
+namespace Entidades
 {
     public class Persona
     {

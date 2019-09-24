@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections;
+using Entidades;
 
-namespace Negocio
+namespace Logica
 {
     public class Aplicacion
     {

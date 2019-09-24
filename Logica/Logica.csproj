@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78168089-F744-4FDB-8FC4-707782488920}</ProjectGuid>
+    <ProjectGuid>{7D687AFD-F38E-4863-811D-6D424EC9B791}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Negocio</RootNamespace>
-    <AssemblyName>Negocio</AssemblyName>
+    <RootNamespace>Logica</RootNamespace>
+    <AssemblyName>Logica</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,12 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aplicacion.cs" />
-    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{76e41581-4382-40c9-9455-15507d00163d}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
