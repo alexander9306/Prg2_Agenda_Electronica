@@ -50,12 +50,6 @@ namespace Presentacion
         }
 
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnAgregar_Click_1(object sender, EventArgs e)
         {
             app.CrearPersona(txtNombre.Text,
